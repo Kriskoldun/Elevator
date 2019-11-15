@@ -19,7 +19,7 @@ namespace Elevator
 
 		public override void Entry(IModHelper helper)
 		{
-			ElevatorBuildingTexture = helper.Content.Load<Texture2D>("Hotel.png");//Must be before PatchAll
+			ElevatorBuildingTexture = helper.Content.Load<Texture2D>("{{season}}_Hotel.png");//Must be before PatchAll
 			
 			//Harmony patch everything
 			Patch.PatchAll("me.ilyaki.elevator");
